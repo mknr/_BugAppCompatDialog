@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BugAppCompatDialog" parent="Theme.AppCompat.NoActionBar">
+        <item name="alertDialogStyle">@style/CustomAlertDialogStyle</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout">@layout/custom_abc_alert_dialog_material</item>
+    </style>
+</resources>
