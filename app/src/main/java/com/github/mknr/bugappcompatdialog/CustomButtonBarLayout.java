@@ -113,6 +113,9 @@ public class CustomButtonBarLayout extends LinearLayout {
 
         if (ViewCompat.getMinimumHeight(this) != minHeight) {
             setMinimumHeight(minHeight);
+            if (heightMeasureSpec == MeasureSpec.UNSPECIFIED) {
+                super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+            }
         }
     }
 
